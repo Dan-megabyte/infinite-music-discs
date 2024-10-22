@@ -25,6 +25,7 @@ class Constants():
     STATUS_MESSAGE_ANIM_TIME_MS = 300
     STATUS_MESSAGE_SHOW_TIME_MS = 10000
     LINE_EDIT_MAX_CHARS = 100
+    CUSTOM_MODEL_DATA_MIN = 0
     CUSTOM_MODEL_DATA_MAX = 16777000
     LEGACY_DP_LATEST_VERSION = 11
     FILTER_IMAGE = "Image files (*.png)"
@@ -341,7 +342,7 @@ class SettingContents:
 SettingsListContents = [
     SettingContents(key='pack',         type=SettingType.PACKPNG,   label=DisplayStrings.STR_PACKPNG_TITLE,     tooltip=DisplayStrings.STR_PACKPNG_TOOLTIP      ),
     SettingContents(key='version',      type=SettingType.DROPDOWN,  label=DisplayStrings.STR_VERSION_TITLE,     tooltip=DisplayStrings.STR_VERSION_TOOLTIP,     params=PackFormatsDict),
-#   SettingContents(key='offset',       type=SettingType.NUM_ENTRY, label=DisplayStrings.STR_OFFSET_TITLE,      tooltip=DisplayStrings.STR_OFFSET_TOOLTIP,      params=Constants.CUSTOM_MODEL_DATA_MAX),
+    SettingContents(key='offset',       type=SettingType.NUM_ENTRY, label=DisplayStrings.STR_OFFSET_TITLE,      tooltip=DisplayStrings.STR_OFFSET_TOOLTIP,      params=Constants.CUSTOM_MODEL_DATA_MIN),
     SettingContents(key='name',         type=SettingType.TXT_ENTRY, label=DisplayStrings.STR_PACKNAME_TITLE,    tooltip=DisplayStrings.STR_PACKNAME_TOOLTIP,    params=Constants.DEFAULT_PACK_NAME),
     SettingContents(key='zip',          type=SettingType.CHECK,     label=DisplayStrings.STR_ZIP_TITLE,         tooltip=DisplayStrings.STR_ZIP_TOOLTIP          ),
     SettingContents(key='mix_mono',     type=SettingType.CHECK,     label=DisplayStrings.STR_MIXMONO_TITLE,     tooltip=DisplayStrings.STR_MIXMONO_TOOLTIP      ),
